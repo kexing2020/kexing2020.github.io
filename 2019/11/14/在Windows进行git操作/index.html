@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    
+
+    
+    <title>在Windows进行git操作 | Hexo</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content="git" />
+    
+    <meta name="description" content="1、创建Git仓库 (1)切换目录cd 路径  (2)创建目录mkdir 目录名  (3)在目录中创建新的git仓库git init  成功则会提示：Initialized empty Git repository in    (4)在项目中查看生成的.git子目录ls -a  成功则会提示.&#x2F;  ..&#x2F;  .git&#x2F;    2、拷贝Git仓库 拷贝Git仓库到本地git clone [url]">
+<meta name="keywords" content="git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="在Windows进行git操作">
+<meta property="og:url" content="http:&#x2F;&#x2F;kexing.wiki&#x2F;2019&#x2F;11&#x2F;14&#x2F;%E5%9C%A8Windows%E8%BF%9B%E8%A1%8Cgit%E6%93%8D%E4%BD%9C&#x2F;index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1、创建Git仓库 (1)切换目录cd 路径  (2)创建目录mkdir 目录名  (3)在目录中创建新的git仓库git init  成功则会提示：Initialized empty Git repository in    (4)在项目中查看生成的.git子目录ls -a  成功则会提示.&#x2F;  ..&#x2F;  .git&#x2F;    2、拷贝Git仓库 拷贝Git仓库到本地git clone [url]">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-11-27T04:10:47.019Z">
+<meta name="twitter:card" content="summary">
+    
+
+    
+        <link rel="alternate" href="/" title="Hexo" type="application/atom+xml" />
+    
+
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Home</a>
+                                </li>
+                            
+                                        
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">About</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    uncategorized
+    </h1>
+</div>
+
+                        <div class="main-body-content">
+                            <article id="post-在Windows进行git操作" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        在Windows进行git操作
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+      <i class="fa fa-calendar"></i>
+      <a href="/2019/11/14/%E5%9C%A8Windows%E8%BF%9B%E8%A1%8Cgit%E6%93%8D%E4%BD%9C/" class="article-date">
+         <time datetime="2019-11-14T01:21:26.000Z" itemprop="datePublished">2019-11-14</time>
+      </a>
+    </div>
+
+
+                
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/git/" rel="tag">git</a>
+    </div>
+
+                
+
+                
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <h5 id="1、创建Git仓库"><a href="#1、创建Git仓库" class="headerlink" title="1、创建Git仓库"></a>1、创建Git仓库</h5><ul>
+<li><p>(1)切换目录<code>cd 路径</code></p>
+</li>
+<li><p>(2)创建目录<code>mkdir 目录名</code></p>
+</li>
+<li><p>(3)在目录中创建新的git仓库<code>git init</code></p>
+<ul>
+<li>成功则会提示：Initialized empty Git repository in </li>
+</ul>
+</li>
+<li><p>(4)在项目中查看生成的.git子目录<code>ls -a</code></p>
+<ul>
+<li>成功则会提示./  ../  .git/</li>
+</ul>
+</li>
+</ul>
+<h5 id="2、拷贝Git仓库"><a href="#2、拷贝Git仓库" class="headerlink" title="2、拷贝Git仓库"></a>2、拷贝Git仓库</h5><ul>
+<li>拷贝Git仓库到本地<code>git clone [url]</code><ul>
+<li>例如：<code>git clone git@github.com:schacon/simplegit.git</code></li>
+<li>例如：<code>git clone git@192.168.2.117:vhotelsunion.com.git</code></li>
+</ul>
+</li>
+</ul>
+<h5 id="3、基本快照"><a href="#3、基本快照" class="headerlink" title="3、基本快照"></a>3、基本快照</h5><ul>
+<li><p>(1)将文件添加到缓存区<code>git add 文件名</code></p>
+<ul>
+<li>新项目添加所有文件<code>git add .</code></li>
+<li>添加整个文件夹及内容<code>git add 文件夹名/</code></li>
+<li>如若成功没有任何提示</li>
+<li><code>fatal: pathspec &#39;文件名&#39; did not match any files</code><ul>
+<li>说明在增加时，本地文件下没有这个文件 </li>
+<li>直接在目录中创建文件，而不是使用<code>touch</code>目录创建文件，然后再使用<code>git add</code>命令增加即可</li>
+<li>加上<strong>后缀名READ.md</strong>则不会出现这个问题</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>(2)查看项目当前状态<code>git status</code>：详细输出内容</p>
+<ul>
+<li>加入-s参数，则会简短输出结果<code>git status-s</code> </li>
+<li>如若未添加成功则显示：<code>?? 文件名</code></li>
+<li>如若添加成功则显示：<code>A 文件名</code></li>
+<li>当编辑完文件在再执行<code>git status -s</code>则显示：<code>AM 文件名</code><ul>
+<li>“AM”状态表示添加文件到缓存之后又有改动</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>(3)查看执行<code>git statis</code>的结果的详细信息<code>git diff</code></p>
+<ul>
+<li>显示已写入缓存语已修改但尚未写入缓存的改动的区别</li>
+<li>尚未缓存的改动：<code>git diff</code></li>
+<li>查看已缓存的改动 :<code>git diff --cached</code></li>
+<li>查看已缓存的与未缓存的所有改动 :<code>git diff HEAD</code></li>
+<li>显示摘要而非整个 diff:<code>git diff --stat</code></li>
+</ul>
+</li>
+<li><p>(4)将缓存区内容添加到仓库中<code>git commit</code></p>
+<ul>
+<li>(i)Git 为每一个提交都记录名字与电子邮箱地址，所以第一步需要配置用户名和邮箱地址 <ul>
+<li><code>git config --global user.name 名字</code></li>
+<li><code>git config --global user.email 邮箱</code></li>
+</ul>
+</li>
+<li>(ii)提交并提交注释<code>git commit -m &quot;注释&quot;</code></li>
+<li>(iii)执行<code>git status</code></li>
+</ul>
+</li>
+<li><p>(5)取消已经缓存的内容<code>git reset HEAD 文件名</code></p>
+<ul>
+<li>执行 git reset HEAD 以取消之前 git add 添加，但不希望包含在下一提交快照中的缓存 </li>
+</ul>
+</li>
+<li><p>(6)命令行删除文件<code>git rm 文件名</code></p>
+<ul>
+<li>不从工作区中删除文件<code>git rm --cached 文件名</code></li>
+</ul>
+</li>
+<li><p>(7)移动或重命名一个文件、目录、软链接<code>git mv 文件名</code></p>
+</li>
+<li><p>(8)推送到远程服务器的代码仓库<code>git push</code></p>
+<ul>
+<li>推送本地分支到远程分支<code>git push origin</code></li>
+</ul>
+</li>
+<li><p>(9)从远程代码仓库拉取到最新版本到本地仓库<code>git pull</code></p>
+<ul>
+<li>拉取有变化的文件</li>
+</ul>
+</li>
+<li><p>(10)查看提交记录<code>git log</code></p>
+</li>
+<li><p>(11)分组查看简要的提交记录<code>git shortlog</code></p>
+</li>
+<li><p>(12)比较当前工作区中的指定文件和本地仓库中当前版本的文件有何不同<code>git diff filename</code></p>
+</li>
+<li><p>(13)比较整个工作区中的文件和当前版本有何不同<code>git diff HEAD</code></p>
+</li>
+<li><p>(14)把文件从暂存区域复制到工作目录，用来丢弃本地修改 <code>git checkout</code></p>
+</li>
+<li><p>(15)合并分支命令<code>git merge</code></p>
+</li>
+</ul>
+<h5 id="4、文件操作"><a href="#4、文件操作" class="headerlink" title="4、文件操作"></a>4、文件操作</h5><ul>
+<li>(1)在目录中创建空文件<code>touch 文件名</code></li>
+<li>(2)在vim编辑器中打开文件<code>vim 文件名</code><ul>
+<li>如若该文件不存在，则创建</li>
+</ul>
+</li>
+<li>(3)在vim编辑器中修改文件<ul>
+<li>打开文件</li>
+<li>键盘输入字母i进入插入编辑模式</li>
+</ul>
+</li>
+<li>(4)在vim编辑器中保存文件<ul>
+<li>按下ESC键，退出编辑模式，切换到命令模式</li>
+<li>在命令模式下键入”ZZ”或者”:wq”保存修改并且退出vim</li>
+<li>如果只想保存文件，则键入”<code>:w&quot;</code>，回车后底行会提示写入操作结果，并保持停留在命令模式 </li>
+</ul>
+</li>
+<li>(5)在vim编辑器中放弃所有文件修改 <ul>
+<li>按下<code>ESC</code>键进入命令模式，键入”<code>:q!&quot;</code>回车后放弃修改并退出<code>vim</code> </li>
+<li>.放弃所有文件修改，但不退出 <code>vi</code>，即回退到文件打开后最后一次保存操作的状态，继续进行文件操作：按下<code>ESC</code>键进入命令模式，键入”<code>:e!&quot;</code>，回车后回到命令模式 </li>
+</ul>
+</li>
+<li>(6) 查看文件内容 <code>cat 文件名</code></li>
+<li>(7)删除文件夹<code>rm -r 文件夹名</code></li>
+<li>(8)删除文件<code>rm 文件名</code></li>
+<li></li>
+</ul>
+<h5 id="5、Git分支管理"><a href="#5、Git分支管理" class="headerlink" title="5、Git分支管理"></a>5、Git分支管理</h5><ul>
+<li>(1)创建分支命令<code>git branch 分支名</code></li>
+<li>(2)切换分支命令<code>git checkout  分支名</code></li>
+<li>(3)合并分支命令<code>git merge</code></li>
+<li>(4)列出分支<code>git branch</code></li>
+<li>(5)删除分支<code>git branch -d  (branchname)</code></li>
+<li>(6)合并分支<code>git branch</code></li>
+</ul>
+<h5 id="6、Git远程仓库-Github"><a href="#6、Git远程仓库-Github" class="headerlink" title="6、Git远程仓库(Github)"></a>6、Git远程仓库(Github)</h5><ul>
+<li>(1)添加远程库<code>git remote add [shortname] [url]</code></li>
+<li>(2)配置验证信息`ssh-keygen -t rsa -C “<a href="mailto:youremail@example.com" target="_blank" rel="noopener">youremail@example.com</a>“</li>
+</ul>
+<h5 id="7、Git基本流程"><a href="#7、Git基本流程" class="headerlink" title="7、Git基本流程"></a>7、Git基本流程</h5><ul>
+<li>git add — git commit —git commit -m “注释”—git status —git push origin —git log —git checkout —git pull —git log</li>
+</ul>
+<h5 id="Git提示"><a href="#Git提示" class="headerlink" title="Git提示"></a>Git提示</h5><ul>
+<li>(1)<code>warning: LF will be replaced by CRLF in hello.php</code><ul>
+<li>该问题详细解释和解决方法： <a href="https://blog.csdn.net/wq6ylg08/article/details/88761581" target="_blank" rel="noopener">https://blog.csdn.net/wq6ylg08/article/details/88761581</a> </li>
+</ul>
+</li>
+</ul>
+<h5 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h5><ul>
+<li>cd是change directory</li>
+<li>mkdir是make directories</li>
+<li>ls是list</li>
+<li>vim是常用的编辑器</li>
+<li>rm是remove</li>
+<li>mv是move</li>
+</ul>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="http://kexing.wiki/2019/11/14/%E5%9C%A8Windows%E8%BF%9B%E8%A1%8Cgit%E6%93%8D%E4%BD%9C/" data-id="ck4yb4ked0003l0vdee3x1vxe" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "John Doe"
+        },
+        "headline": "在Windows进行git操作",
+        "image": "http://kexing.wiki",
+        "keywords": "git",
+        "genre": "",
+        "datePublished": "2019-11-14",
+        "dateCreated": "2019-11-14",
+        "dateModified": "2019-11-27",
+        "url": "http://kexing.wiki/2019/11/14/在Windows进行git操作/",
+        "description": "1、创建Git仓库
+(1)切换目录cd 路径
+
+(2)创建目录mkdir 目录名
+
+(3)在目录中创建新的git仓库git init
+
+成功则会提示：Initialized empty Git repository in 
+
+
+(4)在项目中查看生成的.git子目录ls -a
+
+成功则会提示./  ../  .git/
+
+
+
+2、拷贝Git仓库
+拷贝Git仓库到本地git clone [url]
+",
+        "wordCount": 208
+    }
+</script>
+
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+    
+    </section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="twitter" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-twitter"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="stack-overflow" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-stack-overflow"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/ppoffice/hexo-theme-hueman" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2019/11/14/%E8%A1%A8%E5%8D%95/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            表单
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/12/12/%E5%9C%A8Windows%E8%BF%9B%E8%A1%8Cgit%E6%93%8D%E4%BD%9C2/" class="thumbnail">
+    
+    
+        <span style="background-image:url(E:%5Cmyblog%5Csource%5Cimage%5Cgit.png)" alt="在Windows进行git操作2" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2019/12/12/%E5%9C%A8Windows%E8%BF%9B%E8%A1%8Cgit%E6%93%8D%E4%BD%9C2/" class="title">在Windows进行git操作2</a></p>
+                            <p class="item-date"><time datetime="2019-12-12T04:25:53.000Z" itemprop="datePublished">2019-12-12</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/11/14/%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2019/11/14/%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/" class="title">问题记录</a></p>
+                            <p class="item-date"><time datetime="2019-11-14T01:57:05.000Z" itemprop="datePublished">2019-11-14</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/11/14/%E5%9D%97%E7%BA%A7%E5%86%85%E8%81%94%E5%85%83%E7%B4%A0/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2019/11/14/%E5%9D%97%E7%BA%A7%E5%86%85%E8%81%94%E5%85%83%E7%B4%A0/" class="title">块级内联元素</a></p>
+                            <p class="item-date"><time datetime="2019-11-14T01:55:25.000Z" itemprop="datePublished">2019-11-14</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/11/14/%E5%88%97%E8%A1%A8/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2019/11/14/%E5%88%97%E8%A1%A8/" class="title">列表</a></p>
+                            <p class="item-date"><time datetime="2019-11-14T01:53:14.000Z" itemprop="datePublished">2019-11-14</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/11/14/%E8%A1%A8%E6%A0%BC/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2019/11/14/%E8%A1%A8%E6%A0%BC/" class="title">表格</a></p>
+                            <p class="item-date"><time datetime="2019-11-14T01:52:40.000Z" itemprop="datePublished">2019-11-14</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">6</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">tags</h3>
+        <div class="widget">
+            <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%96%91%E6%83%91/" rel="tag">疑惑</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/git/" style="font-size: 15px;">git</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 20px;">前端</a> <a href="/tags/%E7%96%91%E6%83%91/" style="font-size: 10px;">疑惑</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io" target="_blank" rel="noopener">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;" target="_blank" rel="noopener"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2020 John Doe</p>
+                
+                <p>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="https://github.com/ppoffice" target="_blank">PPOffice</a></p>
+                
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+        
+    
+    <script>
+    var disqus_shortname = 'hexo-theme-hueman';
+    
+    
+    var disqus_url = 'http://kexing.wiki/2019/11/14/%E5%9C%A8Windows%E8%BF%9B%E8%A1%8Cgit%E6%93%8D%E4%BD%9C/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>

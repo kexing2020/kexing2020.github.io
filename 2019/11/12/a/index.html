@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    
+
+    
+    <title>a | Hexo</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content="工作记录" />
+    
+    <meta name="description" content="2019-11-5 查找官网有什么问题  首页视频不能播放——未解决  首页点击”我们的一站式输出模块”转到404页面——未解决  谷歌开发工具在手机模式下，点击”三”无法跳转导航栏——已解决  一开始尝试用元素.classlist.add(“属性名”)，但是只能实现一次跳转。原因在于点击多次，会反复添加class属性 最终代码如下：           window.onload = funct">
+<meta name="keywords" content="工作记录">
+<meta property="og:type" content="article">
+<meta property="og:title" content="a">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;12&#x2F;a&#x2F;index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="2019-11-5 查找官网有什么问题  首页视频不能播放——未解决  首页点击”我们的一站式输出模块”转到404页面——未解决  谷歌开发工具在手机模式下，点击”三”无法跳转导航栏——已解决  一开始尝试用元素.classlist.add(“属性名”)，但是只能实现一次跳转。原因在于点击多次，会反复添加class属性 最终代码如下：           window.onload = funct">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-11-12T07:05:37.430Z">
+<meta name="twitter:card" content="summary">
+    
+
+    
+        <link rel="alternate" href="/" title="Hexo" type="application/atom+xml" />
+    
+
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Home</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/web%E5%89%8D%E7%AB%AF/">web前端</a></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">About</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    uncategorized
+    </h1>
+</div>
+
+                        <div class="main-body-content">
+                            <article id="post-a" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        a
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+      <i class="fa fa-calendar"></i>
+      <a href="/2019/11/12/a/" class="article-date">
+         <time datetime="2019-11-12T03:59:28.000Z" itemprop="datePublished">2019-11-12</time>
+      </a>
+    </div>
+
+
+                
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/" rel="tag">工作记录</a>
+    </div>
+
+                
+
+                
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <h5 id="2019-11-5"><a href="#2019-11-5" class="headerlink" title="2019-11-5"></a>2019-11-5</h5><ul>
+<li><p>查找官网有什么问题</p>
+<ul>
+<li><p>首页视频不能播放——未解决</p>
+</li>
+<li><p>首页点击”我们的一站式输出模块”转到404页面——未解决</p>
+</li>
+<li><p>谷歌开发工具在手机模式下，点击”三”无法跳转导航栏——已解决</p>
+<ul>
+<li>一开始尝试用元素.classlist.add(“属性名”)，但是只能实现一次跳转。原因在于点击多次，会反复添加class属性</li>
+<li>最终代码如下：</li>
+</ul>
+<script>
+        window.onload = function () {
+            var jz_nav_menu = document.querySelector('.jz_nav_menu');
+            var jz_nav = document.querySelector('#jz_nav');
+            jz_nav_menu.onclick = function () {
+                jz_nav_menu.setAttribute('style', 'display:none');
+                jz_nav.setAttribute('style', 'height:100%');
+            }
+            jz_nav.onclick = function () {
+                jz_nav.setAttribute('style', 'height:0');
+                jz_nav_menu.setAttribute('style', 'display:block');
+            }
+        }
+</script>
+
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h5 id="2019-11-6"><a href="#2019-11-6" class="headerlink" title="2019-11-6"></a>2019-11-6</h5><ul>
+<li>解决昨天跳转之后，无法出现X的问题<ul>
+<li>从”三”跳转到”X”，是因为第一行和最后一行倾斜了45°，并且第二行的opcatity设置为0。但是无法按照原官网实现代码——未解决</li>
+</ul>
+</li>
+<li>看小程序书</li>
+</ul>
+<hr>
+<h5 id="2019-11-7"><a href="#2019-11-7" class="headerlink" title="2019-11-7"></a>2019-11-7</h5><ul>
+<li><p>看小程序官网指南的组件部分，并下载demo学习</p>
+<ul>
+<li>视图容器<ul>
+<li>cover-view</li>
+<li>movable-area、movable-view</li>
+<li>scroll-views</li>
+<li>swiper、swiper-item</li>
+<li>view</li>
+</ul>
+</li>
+<li>基础内容<ul>
+<li>icon</li>
+<li>progress</li>
+<li>rich-text</li>
+<li>text</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>备注：</p>
+<ul>
+<li><p>需要学习canvas(逻辑、数学)</p>
+</li>
+<li><p>富文本：比较丰富的文本，可以有颜色等设置</p>
+</li>
+<li><p>解答：</p>
+<ul>
+<li>在地图等一些组件上，不使用cover-image的话就没办法在地图等显示</li>
+<li>微信小程序官网指南demo和在开发者工具中预览效果代码不同(不同人写)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h5 id="2019-11-8"><a href="#2019-11-8" class="headerlink" title="2019-11-8"></a>2019-11-8</h5><ul>
+<li>在菜鸟教程上看git教程<ul>
+<li>看到git分支管理，并完成一部分笔记</li>
+</ul>
+</li>
+<li>去给密码门换密码</li>
+<li>参考笔记：<ul>
+<li><a href="http://note.youdao.com/noteshare?id=5e460a8bb242fcbdda18bab27d2bddcf" target="_blank" rel="noopener">http://note.youdao.com/noteshare?id=5e460a8bb242fcbdda18bab27d2bddcf</a></li>
+</ul>
+</li>
+<li>备注：<ul>
+<li>详细记录每一个步骤方便以后回顾</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h5 id="2019-11-9"><a href="#2019-11-9" class="headerlink" title="2019-11-9"></a>2019-11-9</h5><ul>
+<li>查找如何解决官网视频不能正常播放<ul>
+<li>未解决视频自动播放问题</li>
+</ul>
+</li>
+<li>下午休假</li>
+</ul>
+<hr>
+<h5 id="2019-11-10"><a href="#2019-11-10" class="headerlink" title="2019-11-10"></a>2019-11-10</h5><ul>
+<li>解决视频播放问题<ul>
+<li>打开视频找到网址，点击分享—引用—复制通用代码</li>
+</ul>
+</li>
+<li>小程序扫描<ul>
+<li>网络wx.request</li>
+<li>modal模态弹窗(书)</li>
+<li>二维码</li>
+<li>JSON格式</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h5 id="2019-11-11"><a href="#2019-11-11" class="headerlink" title="2019-11-11"></a>2019-11-11</h5><ul>
+<li><p>微信小程序扫码界面wx.scanCode</p>
+<ul>
+<li>微信官方文档—API—扫码</li>
+<li>回调成功会获得result、scanType、charSet、path、rawData<ul>
+<li>获得的rawData是base64编码<ul>
+<li>检索：小程序如何将base64编码的字符串解码</li>
+</ul>
+</li>
+<li>对base64进行解码，获得url</li>
+<li>获取url参数<ul>
+<li>检索：js获取url参数名和参数值</li>
+</ul>
+</li>
+<li>拿出url参数的key和value值<ul>
+<li>检索：JS获取对象键值对中key值的方法</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>模块化：将公共代码抽离成为独立js脚本</p>
+<ul>
+<li><p>通过module.exports对外暴露接触以供其他.js文件使用</p>
+<ul>
+<li>```<br>module.exports = {<br>  getUrlArgsKeyValue: getKeyValue<br>  }<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">+ 在需要使用这些模块的js文件中，使用require(path)k将公共代码引入</span><br><span class="line"></span><br><span class="line">  +</span><br></pre></td></tr></table></figure>
+const base64 = require(‘../utils/base64.js’)<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">+ 生命周期函数onLoad、onShow、onReady、onHide、onUnload</span><br><span class="line"></span><br><span class="line">+ 备注：</span><br><span class="line"></span><br><span class="line">  + 善用日志console.log,这样可以查到程序运行到哪一步之后有问题</span><br><span class="line">  + 在一些常见问题可以上网查看前人给出的解决方案</span><br><span class="line">  + 网上查找时，先看代码描述，然后直接用，看是否正常运行，再详细看下代码</span><br><span class="line">  + 正则表达式</span><br><span class="line"></span><br><span class="line">***</span><br><span class="line"></span><br><span class="line">##### 2019-11-12</span><br><span class="line"></span><br><span class="line">+ 快捷键</span><br><span class="line"></span><br><span class="line">  + 微信小程序/VS同时选中多行代码编辑ctrl+shift+L</span><br><span class="line">  + 截屏alt+F12</span><br><span class="line">  + 复制shift+delete</span><br><span class="line">  + 粘贴shirt+insert</span><br><span class="line"></span><br><span class="line">+ 在Windows环境下使用hexo搭建博客</span><br><span class="line"></span><br><span class="line">  + https://www.jianshu.com/p/3f2fe426edff</span><br><span class="line"></span><br><span class="line">  + [https://winney07.github.io/2018/08/02/%E5%9C%A8Hexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0/](https://winney07.github.io/2018/08/02/在Hexo博客中发布文章/) </span><br><span class="line"></span><br><span class="line">  + 补充：</span><br><span class="line"></span><br><span class="line">    + 在hexo博客目录下，进入Git Bash命令窗口中，输入以下命令： </span><br><span class="line"></span><br><span class="line">    +</span><br></pre></td></tr></table></figure>
+hexo new “在这里”<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">+ 安装中出现的问题</span><br></pre></td></tr></table></figure>
+npm insta hexo-cli -g<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">安装中出现</span><br></pre></td></tr></table></figure>
+npm ERR! Unexpected end of JSON input while parsing near ‘…ty”:”sha512-NnSOmMEYt’<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">    解决方法：重启Git Bash</span><br><span class="line"></span><br><span class="line">+ 备注</span><br><span class="line"></span><br><span class="line">  +  Hexo 发布的文章是 Markdown 格式的文件， Markdown 基本语法 http://www.markdown.cn/ </span><br><span class="line">  +  搜索关键字：怎么将原有本地的md文件添加进hex</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">这是一个普通段落：</span><br><span class="line"></span><br><span class="line">code</span><br><span class="line"></span><br><span class="line">```javascript</span><br><span class="line">var a = 0;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="http://yoursite.com/2019/11/12/a/" data-id="ck2wyi9u70000uovdhbjv2iei" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "John Doe"
+        },
+        "headline": "a",
+        "image": "http://yoursite.com",
+        "keywords": "工作记录",
+        "genre": "",
+        "datePublished": "2019-11-12",
+        "dateCreated": "2019-11-12",
+        "dateModified": "2019-11-12",
+        "url": "http://yoursite.com/2019/11/12/a/",
+        "description": "2019-11-5
+查找官网有什么问题
+
+首页视频不能播放——未解决
+
+首页点击”我们的一站式输出模块”转到404页面——未解决
+
+谷歌开发工具在手机模式下，点击”三”无法跳转导航栏——已解决
+
+一开始尝试用元素.classlist.add(“属性名”)，但是只能实现一次跳转。原因在于点击多次，会反复添加class属性
+最终代码如下：
+
+
+        window.onload = funct",
+        "wordCount": 441
+    }
+</script>
+
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+    
+    </section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="twitter" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-twitter"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="stack-overflow" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-stack-overflow"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/ppoffice/hexo-theme-hueman" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2019/11/12/%E5%9C%A8%E8%BF%99%E9%87%8C/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">在这里</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/11/12/a/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2019/11/12/a/" class="title">a</a></p>
+                            <p class="item-date"><time datetime="2019-11-12T03:59:28.000Z" itemprop="datePublished">2019-11-12</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/11/12/%E5%9C%A8%E8%BF%99%E9%87%8C/" class="thumbnail">
+    
+    
+        <span style="background-image:url(image%5C1.png)" alt="在这里" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/web%E5%89%8D%E7%AB%AF/">web前端</a></p>
+                            <p class="item-title"><a href="/2019/11/12/%E5%9C%A8%E8%BF%99%E9%87%8C/" class="title">在这里</a></p>
+                            <p class="item-date"><time datetime="2019-11-12T03:03:31.000Z" itemprop="datePublished">2019-11-12</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/web%E5%89%8D%E7%AB%AF/">web前端</a><span class="category-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">tags</h3>
+        <div class="widget">
+            <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/" rel="tag">工作记录</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 10px;">博客</a> <a href="/tags/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/" style="font-size: 10px;">工作记录</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io" target="_blank" rel="noopener">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;" target="_blank" rel="noopener"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2019 John Doe</p>
+                
+                <p>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="https://github.com/ppoffice" target="_blank">PPOffice</a></p>
+                
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+        
+    
+    <script>
+    var disqus_shortname = 'hexo-theme-hueman';
+    
+    
+    var disqus_url = 'http://yoursite.com/2019/11/12/a/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
